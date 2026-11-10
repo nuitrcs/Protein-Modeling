@@ -1,0 +1,35 @@
+I1103 17:14:27.737107 22847158477952 folding_input.py:1044] Detected /home/tpo5201/e32559/06_alphafold/msa_outputs/spycatcher_spytag/spycatcher_spytag_data.json is an AlphaFold 3 JSON since the top-level is not a list.
+I1103 17:14:28.761343 22847158477952 xla_bridge.py:895] Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+I1103 17:14:28.774376 22847158477952 xla_bridge.py:895] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I1103 17:14:38.923672 22847158477952 pipeline.py:165] processing spycatcher_spytag, random_seed=1
+I1103 17:14:38.937505 22847158477952 pipeline.py:258] Calculating bucket size for input with 126 tokens.
+I1103 17:14:38.937650 22847158477952 pipeline.py:264] Got bucket size 256 for input with 126 tokens, resulting in 130 padded tokens.
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+Skipping running the data pipeline.
+Found local devices: [CudaDevice(id=0)]
+Building model from scratch...
+Processing 1 fold inputs.
+Processing fold input spycatcher_spytag
+Checking we can load the model parameters...
+Skipping data pipeline...
+Output directory: /home/tpo5201/e32559/06_alphafold/output_pdbs/spycatcher_spytag
+Writing model input JSON to /home/tpo5201/e32559/06_alphafold/output_pdbs/spycatcher_spytag
+Predicting 3D structure for spycatcher_spytag for seed(s) (1,)...
+Featurising data for seeds (1,)...
+Featurising spycatcher_spytag with rng_seed 1.
+Featurising spycatcher_spytag with rng_seed 1 took 2.64 seconds.
+Featurising data for seeds (1,) took  9.04 seconds.
+Running model inference for seed 1...
+Running model inference for seed 1 took  42.99 seconds.
+Extracting output structures (one per sample) for seed 1...
+Extracting output structures (one per sample) for seed 1 took  0.14 seconds.
+Running model inference and extracting output structures for seed 1 took  43.13 seconds.
+Running model inference and extracting output structures for seeds (1,) took  43.13 seconds.
+Writing outputs for spycatcher_spytag for seed(s) (1,)...
+Done processing fold input spycatcher_spytag.
+Done processing 1 fold inputs.
